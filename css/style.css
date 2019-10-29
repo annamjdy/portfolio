@@ -41,6 +41,13 @@ button {
     padding: 5px 10px;
 }
 
+button:hover {
+    background: transparent;
+    border: 1px solid #c7c73f;
+    color: #c7c73f;
+    transition: 0.5s;
+}
+
 
 /* nawigacja */
 
@@ -470,6 +477,8 @@ footer {
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
+
+
     section.about img {
         height: 69%;
         top: 16%;
@@ -485,5 +494,14 @@ footer {
     .about-box::before,
     .about-box::after {
         left: -64.4rem;
+    }
+
+    .portfolio-item-view {
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    .portfolio-item:hover .portfolio-item-view {
+        opacity: 1;
     }
 }
