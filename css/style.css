@@ -83,7 +83,7 @@ div.welcome {
     background-color: rgba(0, 0, 0, 65%);
 }
 
-div.container {
+div.welcome-container {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -433,7 +433,7 @@ footer {
 
     .portfolio-item {
         flex-basis: 33.33%;
-        height: 50h;
+        height: 55vh;
     }
 
     .portfolio-item:nth-child(5) {
@@ -497,7 +497,7 @@ footer {
     section.about img {
         height: 69%;
         top: 16%;
-        left: 0;
+        left: 5%;
     }
 
     div.about-box {
@@ -511,3 +511,9 @@ footer {
         left: -64.4rem;
     }
 }
+
+@media (min-width: 1200px) {
+    div.container {
+        max-width: 1280px;
+        margin: 0 auto;
+    }}
