@@ -45,7 +45,8 @@ a {
 }
 
 nav {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    background-color: white;
 }
 
 nav ul {
@@ -389,8 +390,6 @@ footer {
 
     div.logo h2 {
         position: absolute;
-        top: 8%;
-        bottom: 8%;
         left: 2%;
         padding-right: 35px;
         padding-left: 35px;
@@ -483,6 +482,13 @@ footer {
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
+    nav {
+        position: fixed;
+        width: 100%;
+        padding-bottom: 20px;
+        z-index: 1;
+    }
+
     section.about img {
         height: 69%;
         top: 16%;
