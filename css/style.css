@@ -29,6 +29,24 @@ a {
     color: black;
 }
 
+button {
+    font-family: 'raleway', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(270deg, #a5a53a 14%, #c7c73f 68.5%);
+    border-radius: 15px;
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 4px black;
+    line-height: 1.3;
+    padding: 5px 10px;
+}
+
+button:hover {
+    background: transparent;
+    border: 1px solid #c7c73f;
+    color: #c7c73f;
+    transition: 0.5s;
+}
 
 /* nawigacja */
 
@@ -165,15 +183,6 @@ div.about-box {
     position: absolute;
     bottom: 8%;
     right: 8%;
-    font-family: 'raleway', sans-serif;
-    font-size: 1.2rem;
-    color: white;
-    padding: 5px 10px;
-    line-height: 1.3;
-    background: linear-gradient(270deg, #a5a53a 14%, #c7c73f 68.5%);
-    border-radius: 15px;
-    border: none;
-
 }
 
 /* SKILLS */
@@ -259,37 +268,37 @@ div.about-box {
     display: block;
     height: 100%;
     opacity: 1;
+    color: white;
     background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(199, 199, 63, 0.5) 100%);
 }
 
 .portfolio-item-view h3 {
-    /* opacity: 0; */
     font-size: 3.5rem;
-    color: white;
     padding: 15px 20px 10px;
     text-shadow: 1px 1px 6px black;
 }
 
 .portfolio-item-view button {
-    /* opacity: 0; */
     margin: 0 20px;
-    font-family: 'raleway', sans-serif;
-    font-size: 1.2rem;
-    color: white;
-    padding: 5px 10px;
-    line-height: 1.3;
-    background: linear-gradient(270deg, #a5a53a 14%, #c7c73f 68.5%);
-    border-radius: 15px;
-    border: none;
 }
 
+.portfolio-item-view p {
+    font-size: 1.2em;
+    line-height: 1.4;
+    text-align: left;
+    margin: 5px 20px;
+    max-width: 300px;
+}
+
+.portfolio-item-view button {
+    margin: 10px 20px;
+}
 
 
 /* contact */
 .contact {
     padding: 30px 20px 15px 20px;
 }
-
 
 .contact-info h1 {
     font-size: 2.6rem;
@@ -334,14 +343,7 @@ div.about-box {
 }
 
 .contact button {
-    font-family: 'raleway', sans-serif;
-    font-size: 1.2rem;
-    color: white;
-    padding: 5px 20px;
     line-height: 1.6;
-    background: linear-gradient(270deg, #a5a53a 14%, #c7c73f 68.5%);
-    border-radius: 15px;
-    border: none;
     width: 100%;
 }
 
@@ -433,7 +435,7 @@ footer {
 
     .portfolio-item {
         flex-basis: 33.33%;
-        height: 55vh;
+ height: 55vh;
     }
 
     .portfolio-item:nth-child(5) {
@@ -509,6 +511,15 @@ footer {
     .about-box::before,
     .about-box::after {
         left: -64.4rem;
+    }
+    
+    .portfolio-item-view {
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    .portfolio-item:hover .portfolio-item-view {
+        opacity: 1;
     }
 }
 
