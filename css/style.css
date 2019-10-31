@@ -437,7 +437,7 @@ footer {
 
     .portfolio-item {
         flex-basis: 33.33%;
-        height: 50h;
+        height: 50vh;
     }
 
     .portfolio-item:nth-child(5) {
