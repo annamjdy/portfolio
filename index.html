@@ -10,14 +10,11 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <header id="home">
         <nav>
             <div class="logo">
-                <h2>
-                    Web Dev
-                </h2>
+                <h2>Web Dev</h2>
             </div>
             <ul>
                 <li class="menu-item"><a href="#">about me</a></li>
@@ -36,91 +33,92 @@
         </div>
     </header>
     <div class="container">
-    <section class="about">
-        <img src="images/adult-1868750_1280.jpg" alt="">
-        <div class="about-box">
-            <h2>About me</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla accusamus architecto quasi quidem, ex
-                voluptas natus quis optio? Placeat quia nostrum voluptatum porro architecto! Fugit esse voluptatibus
-                consequuntur quam quia!</p>
-            <button>Check my CV</button>
-        </div>
-    </section>
-    <section class="skills">
-        <h2>Skills</h2>
-        <div class="skill-item">
-            <img src="images/ui.png" alt="">
-            <h3>UX/UI</h3>
-            <p>Figma</p>
-        </div>
-        <div class="skill-item">
-            <img src="images/icon_frontend.png" alt="">
-            <h3>Front End</h3>
-            <p>Html, CSS, JavaScript</p>
-        </div>
-        <div class="skill-item">
-            <img src="images/icon_backend.png" alt="">
-            <h3>Back End</h3>
-            <p>PHP, Node.js</p>
-        </div>
-    </section>
-    <section class="portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio-container">
-            <div class="portfolio-item">
-                <div class="portfolio-item-view">
-                    <h3>Design</h3>
-                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad nemo aliquam odio corporis natus!
-                    </p>
-                    <button>View</button>
+        <section id="about_me" class="about">
+            <img src="images/adult-1868750_1280.jpg" alt="picture of a man">
+            <div class="about-box">
+                <h2>About me</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla accusamus architecto quasi quidem, ex
+                    voluptas natus quis optio? Placeat quia nostrum voluptatum porro architecto! Fugit esse voluptatibus
+                    consequuntur quam quia!</p>
+                <button>Check my CV</button>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <div class="skill-item">
+                <img src="images/ui.png" alt="phone representing UX/UI">
+                <h3>UX/UI</h3>
+                <p>Figma</p>
+            </div>
+            <div class="skill-item">
+                <img src="images/icon_frontend.png" alt="computer representing Front end">
+                <h3>Front End</h3>
+                <p>Html, CSS, JavaScript</p>
+            </div>
+            <div class="skill-item">
+                <img src="images/icon_backend.png" alt="computer representing Back end">
+                <h3>Back End</h3>
+                <p>PHP, Node.js</p>
+            </div>
+        </section>
+        <section id="my_portfolio" class="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                    <div class="portfolio-item-view">
+                        <h3>Design</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad nemo aliquam odio corporis
+                            natus!
+                        </p>
+                        <button>View</button>
+                    </div>
+                </div>
+                <div class="portfolio-item"></div>
+                <div class="portfolio-item"></div>
+                <div class="portfolio-item"></div>
+                <div class="portfolio-item">
+                    <div class="portfolio-item-view">
+                        <h3>Design project</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas veniam quia at fugiat.
+                            Culpa,
+                            quod facilis! Doloribus quas placeat quibusdam aut qui libero sed facilis quisquam sunt
+                            atque,
+                            excepturi dicta.</p>
+                        <button>View</button>
+                    </div>
                 </div>
             </div>
-            <div class="portfolio-item"></div>
-            <div class="portfolio-item"></div>
-            <div class="portfolio-item"></div>
-            <div class="portfolio-item">
-                <div class="portfolio-item-view">
-                    <h3>Design project</h3>
-                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas veniam quia at fugiat. Culpa,
-                        quod facilis! Doloribus quas placeat quibusdam aut qui libero sed facilis quisquam sunt atque,
-                        excepturi dicta.</p>
-                    <button>View</button>
+        </section>
+        <section id="contact" class="contact">
+            <div class="contact-info">
+                <h1><i class="far fa-envelope"></i>Contact us</h1>
+                <p>Please describe your question. Send me a message and I will answer you as soon as possible!</p>
+            </div>
+            <div class="wrap">
+                <form role="form" method="post" id="contactForm" name="contact-form">
+                    <input type="text" id="name" name="user_name" placeholder="Name" required>
+                    <input type="email" id="mail" name="user_mail" placeholder="Your e-mail adress" required>
+                    <input type="text" id="msg_subject" name="subject" placeholder="Topic" required>
+                    <textarea id="msg" name="user_message" placeholder="Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <h5>Designer Poland, Wrocław</h5>
+                    <span>ul. Tęczowa 12/3 50-000</span>
+                    <span>+48 123-456-789</span>
+                    <span>night-coding@dev.com</span>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="contact">
-        <div class="contact-info">
-            <h1><i class="far fa-envelope"></i>Contact us</h1>
-            <p>Please describe your question. Send me a message and I will answer you as soon as possible!</p>
-        </div>
-        <div class="wrap">
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Your e-mail adress">
-                <input type="text" placeholder="Topic">
-                <textarea placeholder="Message"></textarea>
-                <button>Send</button>
-            </form>
-            <div class="socials">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <h5>Designer Poland, Wrocław</h5>
-                <span>ul. Tęczowa 12/3 50-000</span>
-                <span>+48 123-456-789</span>
-                <span>night-coding@dev.com</span>
             </div>
 
-        </div>
 
-
-    </section>
-
-    <footer>&copy; AM</footer>
- </div>
+        </section>
+        <footer id="copyright">&copy; AM</footer>
+    </div>
 </body>
 
 </html>
