@@ -20,6 +20,10 @@ body {
     min-width: 320px;
 }
 
+h2 {
+    font-size: 2.8rem;
+}
+
 ul {
     list-style: none;
 }
@@ -57,6 +61,7 @@ button:hover {
 
 .logo h2 {
     display: inline;
+    font-size: 1.5rem;
     padding: 5px 50px;
     border: 1px solid #c7c73f;
 }
@@ -168,7 +173,6 @@ div.about-box {
 }
 
 .about-box h2 {
-    font-size: 2.8em;
     padding: 20px;
     text-align: center;
 }
@@ -198,7 +202,6 @@ div.about-box {
     flex-basis: 100%;
     flex-grow: 1;
     text-align: center;
-    font-size: 2.8em;
     margin: 20px;
 }
 
@@ -224,7 +227,6 @@ div.about-box {
 /* PORTFOLIO */
 
 .portfolio h2 {
-    font-size: 2.8em;
     padding: 20px;
     text-align: center;
 
@@ -302,8 +304,7 @@ div.about-box {
 }
 
 
-.contact-info h1 {
-    font-size: 2.6em;
+.contact-info h2 {
     margin-bottom: 15px;
     text-align: center;
 }
@@ -387,63 +388,6 @@ footer {
 
 
 /* media query */
-@media (min-width:640px) and (orientation:landscape) {
-    nav {
-        position: relative;
-    }
-
-    div.logo h2 {
-        position: absolute;
-        /* top: 8%;
-        bottom: 8%; */
-        left: 2%;
-        padding-right: 35px;
-        padding-left: 35px;
-    }
-
-    nav ul {
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-    .banner,
-    div.welcome {
-        height: 70vh;
-    }
-
-    li {
-        flex-basis: 16%;
-        margin-right: 5px;
-    }
-
-    .about img {
-        visibility: visible;
-    }
-
-    .skills {
-        flex-direction: row;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-
-    .skill-item {
-        flex-grow: 1;
-    }
-
-    .skill-item:nth-child(3),
-    .skill-item:nth-child(4) {
-        border-left: 1px dotted #c7c73f;
-    }
-
-    .portfolio-item {
-        flex-basis: 33.33%;
-        height: 55vh;
-    }
-
-    .portfolio-item:nth-child(5) {
-        flex-grow: 1;
-    }
-}
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
@@ -481,15 +425,62 @@ footer {
     .about-box::after {
         left: -54.4em;
     }
+}
+    
+@media (min-width:640px) and (orientation:landscape) {
+    nav {
+        position: relative;
+    }
 
+    div.logo h2 {
+        position: absolute;
+        left: 2%;
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .banner,
+    div.welcome {
+        height: 70vh;
+    }
+
+    li {
+        flex-basis: 16%;
+        margin-right: 5px;
+    }
+
+    .skills {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .skill-item {
+        flex-grow: 1;
+    }
+
+    .skill-item:nth-child(3),
+    .skill-item:nth-child(4) {
+        border-left: 1px dotted #c7c73f;
+    }
+
+    .portfolio-item {
+        flex-basis: 33.33%;
+        height: 55vh;
+    }
+
+    .portfolio-item:nth-child(5) {
+        flex-grow: 1;
+    }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-
-    .welcome-container p {
-        font-size: 8rem;
-    }
 
     nav {
         position: fixed;
@@ -497,14 +488,20 @@ footer {
         padding-bottom: 20px;
         z-index: 1;
     }
-
-
-
+    
+    nav a {
+        transition: 0.3s;
+    }
+    
     nav a:hover {
         transform: scale(1.2);
         transition: .3s;
     }
-
+    
+    .welcome-container p {
+        font-size: 8rem;
+    }
+    
     section.about img {
         height: 69%;
         top: 16%;
@@ -521,7 +518,12 @@ footer {
     .about-box::after {
         left: -56.4em;
     }
-
+    
+    .about-box p {
+        line-height: 1.5;
+        padding: 10px 60px;
+    }
+    
     .portfolio-item-view {
         opacity: 0;
         transition: 0.3s;
@@ -543,7 +545,6 @@ footer {
     div.container h2 {
         font-size: 3.5em;
     }
-
 }
 
 @media (min-width: 1440px) {
