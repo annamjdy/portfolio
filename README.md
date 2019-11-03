@@ -17,5 +17,5 @@ The website consists of navigation bar, banner and 4 sections: about me, skills,
 
 ## Features
 
-The layout of the website is fluid, some elements created with Flexbox. It's fully responsive on multipe screen widths, created with mobile first approach. In desktop, the menu is fixed, it stays at the top when you sroll the page. When you move the mouse over the menu items, they grow in size. Buttons and two of the portfolio items, when hovered, change style. 
+The layout of the website is fluid, some elements created with Flexbox. It's fully responsive on multipe screen widths, created with mobile first approach. In desktop, the menu is fixed, it stays at the top when you sroll the page. When you move the mouse over the menu items, they grow in size. Buttons, two of the portfolio items and social icons, when hovered over, change styles. 
 
