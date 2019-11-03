@@ -550,6 +550,14 @@ footer {
     .portfolio-item:hover .portfolio-item-view {
         opacity: 1;
     }
+    
+    div.socials a {
+        transition: 0.3s;
+    }
+
+    div.socials a:hover {
+        color: rgba(199, 199, 63, 0.5)
+    }
 }
 
 @media (min-width: 1200px) {
