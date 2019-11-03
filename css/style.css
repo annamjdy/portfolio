@@ -21,7 +21,7 @@ body {
 }
 
 h2 {
-    font-size: 2.8rem;
+    font-size: 2.8em;
 }
 
 ul {
@@ -305,6 +305,7 @@ div.about-box {
 
 
 .contact-info h2 {
+    font-size: 2.6em;
     margin-bottom: 15px;
     text-align: center;
 }
@@ -389,6 +390,7 @@ footer {
 
 /* media query */
 
+
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
     section.about img {
@@ -416,6 +418,17 @@ footer {
     }
 }
 
+@media only screen and (min-width: 401px) and (max-width: 960px) and (orientation:landscape) {
+    .portfolio-item {
+        flex-basis: 33.33%;
+        height: auto;
+    }
+
+    .portfolio-item:nth-child(5) {
+        flex-grow: 1;
+    }
+}
+
 @media only screen and (min-width:565px) {
     section.about img {
         left: -10%;
@@ -425,9 +438,10 @@ footer {
     .about-box::after {
         left: -54.4em;
     }
+
 }
-    
-@media (min-width:640px) and (orientation:landscape) {
+
+@media (min-width:640px) {
     nav {
         position: relative;
     }
@@ -471,7 +485,7 @@ footer {
 
     .portfolio-item {
         flex-basis: 33.33%;
-        height: 55vh;
+        height: auto;
     }
 
     .portfolio-item:nth-child(5) {
@@ -479,8 +493,13 @@ footer {
     }
 }
 
+
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
+
+    .welcome-container p {
+        font-size: 8rem;
+    }
 
     nav {
         position: fixed;
@@ -488,20 +507,15 @@ footer {
         padding-bottom: 20px;
         z-index: 1;
     }
-    
+
     nav a {
         transition: 0.3s;
     }
-    
+
     nav a:hover {
         transform: scale(1.2);
-        transition: .3s;
     }
-    
-    .welcome-container p {
-        font-size: 8rem;
-    }
-    
+
     section.about img {
         height: 69%;
         top: 16%;
@@ -518,12 +532,16 @@ footer {
     .about-box::after {
         left: -56.4em;
     }
-    
+
     .about-box p {
         line-height: 1.5;
         padding: 10px 60px;
     }
-    
+
+    .portfolio-item {
+        height: 252px;
+    }
+
     .portfolio-item-view {
         opacity: 0;
         transition: 0.3s;
@@ -545,6 +563,7 @@ footer {
     div.container h2 {
         font-size: 3.5em;
     }
+
 }
 
 @media (min-width: 1440px) {
